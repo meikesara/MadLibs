@@ -91,6 +91,7 @@ public class Story implements Serializable {
     private void read(Scanner input) {
         while (input.hasNext()) {
             String word = input.next();
+            htmlMode = true;
             if (word.startsWith("<") && word.endsWith(">")) {
                 // a placeholder; replace with e.g. "<0>" so I can find/replace it easily later
                 // (make them bold so that they stand out!)
@@ -110,6 +111,7 @@ public class Story implements Serializable {
                 text += word;
             }
         }
+        htmlMode = false;
     }
 
     /** returns story text */

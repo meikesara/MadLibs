@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseActivity">
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Choose one of the following stories:"
+        android:textSize="24sp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        app:columnCount="1"
+        app:rowCount="5">
+
+        <CheckBox
+            android:id="@+id/simple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFill"
+            android:text="Simple" />
+
+        <CheckBox
+            android:id="@+id/tarzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFill"
+            android:text="Tarzan" />
+
+        <CheckBox
+            android:id="@+id/university"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFill"
+            android:text="University" />
+
+        <CheckBox
+            android:id="@+id/clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFill"
+            android:text="Clothes" />
+
+        <CheckBox
+            android:id="@+id/dance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToFill"
+            android:text="Dance" />
+    </android.support.v7.widget.GridLayout>
+
+</LinearLayout>
