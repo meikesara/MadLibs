@@ -57,5 +57,6 @@ public class ChooseActivity extends AppCompatActivity {
         intent.putExtra("clicked_story", clickedStory);
         startActivity(intent);
         checkbox.setChecked(false);
+        finish();
     }
 }

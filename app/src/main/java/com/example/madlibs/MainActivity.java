@@ -17,6 +17,5 @@ public class MainActivity extends AppCompatActivity {
     public void goToChoose(View view) {
         Intent intent = new Intent(this, ChooseActivity.class);
         startActivity(intent);
-        finish();
     }
 }
