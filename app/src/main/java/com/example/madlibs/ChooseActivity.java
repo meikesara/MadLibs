@@ -26,13 +26,17 @@ public class ChooseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose);
     }
 
-    public void goToFill(View view) {
 
+    public void goToFill(View view) {
+        // Set variables checkbox, clickedStory and clickedText
         CheckBox checkbox = (CheckBox) view;
         Story clickedStory;
         String clickedText = (String) checkbox.getText();
+
+        // Set variable stream to the default story (simple)
         InputStream stream = getResources().openRawResource(R.raw.madlib1_tarzan);
 
+        // Change stream depending on which checkbox was clicked
         switch (clickedText) {
             case "Simple":
                 stream = getResources().openRawResource(R.raw.madlib0_simple);
@@ -51,12 +55,15 @@ public class ChooseActivity extends AppCompatActivity {
                 break;
         }
 
+        // Initialise the Story
         clickedStory = new Story(stream);
 
+        // Start the FillActivity and put the Story into the intent
         Intent intent = new Intent(this, FillActivity.class);
         intent.putExtra("clicked_story", clickedStory);
         startActivity(intent);
-        checkbox.setChecked(false);
+
+        // Finish the current activity
         finish();
     }
 }

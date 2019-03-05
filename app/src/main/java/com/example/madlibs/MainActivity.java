@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // Start ChooseActivity if the start button is pressed
     public void goToChoose(View view) {
         Intent intent = new Intent(this, ChooseActivity.class);
         startActivity(intent);
