@@ -51,7 +51,7 @@ public class ChooseActivity extends AppCompatActivity {
                 stream = getResources().openRawResource(R.raw.madlib3_clothes);
                 break;
             case "Dance":
-                stream = getResources().openRawResource(R.raw.madlib4_dance);;
+                stream = getResources().openRawResource(R.raw.madlib4_dance);
                 break;
         }
 

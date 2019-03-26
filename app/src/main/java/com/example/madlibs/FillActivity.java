@@ -10,8 +10,7 @@ import android.widget.TextView;
 public class FillActivity extends AppCompatActivity {
 
     // Create variables remain, type, story, fill and remainder
-    TextView remain;
-    TextView type;
+    TextView remain, type;
     Story story;
     EditText fill;
     int remainder;
