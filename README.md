@@ -6,7 +6,7 @@ This app allows the user to fill in 5 different mad libs stories (Simple, Tarzan
 Extra's: 
 - The filled-in words in the final screen are bold
 - In the third screen (screenshot 3 and 6) the type of word that needs to be filled in is always lowercase.
-- And the app does not allow the user to parse empty strings into the story
+- And the app does not allow the user to parse empty strings into the story, the user will be notified by a 'Toast' message that the form needs to be filled in.
 
 Portrait screenshots of the app:
 
