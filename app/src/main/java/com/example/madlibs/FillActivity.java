@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FillActivity extends AppCompatActivity {
 
@@ -55,6 +56,8 @@ public class FillActivity extends AppCompatActivity {
             remainder = story.getPlaceholderRemainingCount();
             remain.setText(remainder + " word(s) left");
             type.setText("Please type a/an " + story.getNextPlaceholder().toLowerCase());
+        } else {
+            Toast.makeText(this, "Please type a/an " + story.getNextPlaceholder().toLowerCase(), Toast.LENGTH_SHORT).show();
         }
 
         // Check if the story is completely filled in
